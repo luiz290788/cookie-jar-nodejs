@@ -1,0 +1,23 @@
+POST http://glass-jar:8080/login
+Content-Type: application/json
+
+{
+  "username": "kevin",
+  "password": "dunder_mifflin"
+}
+
+###
+
+POST http://glass-jar:8080/logout
+
+###
+
+GET http://glass-jar:8080/give-me-cookies
+
+###
+
+GET http://glass-jar:8080/plastic-jar/give-me-cookies
+
+###
+
+GET http://plastic-jar:9090/give-me-cookies

@@ -1,0 +1,17 @@
+<html>
+  <body>
+    Hello world!
+    <script>
+      fetch('/login', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          username: 'kevin',
+          password: 'dunder_mifflin'
+        })
+      }).then(() => fetch('/plastic-jar/give-me-cookies'))
+        .then((res) => res.json())
+        .then((cookies) => console.log(cookies))
+    </script>
+  </body>
+</html>
